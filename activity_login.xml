@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tanisha.pocketdoctor.LoginActivity"
+    android:orientation="vertical"
+    android:background="#333333"
+    >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <TextView
+        android:text="Login Here!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        tools:text="Login Here!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#ffffff" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/loginusername"
+        android:hint="enter username"
+        android:textColorHint="#ffffff"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/loginpassword"
+        android:hint="enter password"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        tools:text="Login"
+        android:textColor="#ffffff"
+        android:background="#4351AE"
+        android:onClick="Login"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+    <TextView
+        android:text="Forgot Password?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        tools:text="Forgot Password?"
+        android:textSize="18sp"
+        android:textAlignment="textEnd"
+        android:onClick="ForgotPassword"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <TextView
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        tools:text="Create Account"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:onClick="Register"/>
+</LinearLayout>
